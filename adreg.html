@@ -1,0 +1,80 @@
+<html>
+<head><title>ADVERTISEMENT REGISTRATION</title>
+<style>
+.btn-group .button 
+ {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover 
+{
+    background-color: pink;
+	border-radius:100px;
+}
+.button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+}
+.button1:hover {background-color: pink;}
+</style>
+</head>
+<body background="cake.jpg">
+<br>
+<br>
+<h1><CENTER><B>ADVERTISEMENT REGISTRATION FORM</B></CENTER></h1>
+<BR>
+<form>
+<table width="33%" height="50%" align="center">
+<tr>
+<td>ADVERTISEMENT ID</td>
+<td><input type="text" name="aid" value=""></td>
+</tr>
+<tr>
+<td>VENDOR ID</td>
+<td><input type="text" name="vid" value=""></td>
+</tr>
+<tr>
+<td>DURATION OF AD</td>
+<td><input type="text" name="doa" value=""></td>
+</tr>
+<tr>
+<td>POSITION</td>
+<td><input type="text" name="pos" value=""></td>
+</tr>
+<tr>
+<td>SIZE OF AD</td>
+<td><select name="size">
+	<option selected="selected" value=" ">-----------SELECT------------</option>
+	<option value="200*300">200*300</option>
+	<option value="300*400">300*400</option>
+	<option value="400*800">400*800</option>
+	<option value="800*1000">800*1000</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>SAMPLE DESIGN</td>
+<td><input type="file" name="image"></td>
+</tr>
+</table>
+<div class="btn-group">
+<BR>
+<CENTER><input type="submit" class="button1" name="submit_image" value="REGISTER"></CENTER>
+</div>
+</form>
+</body>
+</html>

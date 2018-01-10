@@ -1,0 +1,56 @@
+<html>
+<head><title>ADMIN LOGIN FORM</title></head>
+<style>
+.btn-group .button 
+ {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:hover 
+{
+    background-color: pink;
+	border-radius:100px;
+}
+.button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+}
+.button1:hover {background-color: pink;}
+.logtable
+{
+text-align:justify;
+font-size:19x;
+font-family:sans-serif;
+line-height:2px;
+}
+</style>
+<body background="cake.jpg">
+<div class="logtable">
+<br/>
+<center><h1>ADMIN LOGIN</h1></center>
+<table width="20%" height="40%" align="center">
+<tr><td>USERID</td><td><input type="text" name="userid" value=""><br/></td></tr>
+<tr><td>
+PASSWORD</td><td><input type="password" name="password" value=""><br/></td></tr>
+<br/>
+<br/>
+<div class="btn-group">
+<tr><td><input type="button" class="button1" value="SUBMIT" onclick="ad();"></td>
+<td><input type="button" class="button1" value="CANCEL" onclick="can();"></td></tr>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<html>
+<head><title>E - FACTORY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<img src="frame.jpg" width="100%" height="15%">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 20%;
+  position: absolute;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  height: 90%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.9s;
+  animation-name: fade;
+  animation-duration: 1.9s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 10%) {
+  .text {font-size: 11px}
+}
+
+.btn-group .button 
+ {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    float: left;
+}
+.btn-group .button:hover 
+{
+    background-color: pink;
+	border-radius:100px;
+}
+.button1 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 100px;
+}
+.button1:hover {background-color: pink;}
+.para
+{
+text-align:justify;
+font-size:20px;
+line-height:130%;
+}
+.td,th{
+align:center;
+}
+.logtable
+{
+position:relative;
+text-align:right;
+}
+</style>
+</head>
+<body background="cake.jpg">
+<form action="register.php" method="POST">
+<table width="250px" height="520px" align="left">
+<tr>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="ad1.jpg" width="250px" height="550px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="eveng.jpg" width="250px" height="550px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="hme.jpg" width="250px" height="550px">
+</div>
+</div>
+<br>
+<div style="text-align:left">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</tr>
+<table>
+<table width="50%" height="30%" align="left">
+
+<tr>
+<th><h4><p style text-align:"center";>ABOUT US</p></h4></th>
+</tr>
+<tr>
+<td><div class="para">
+E-FACTORY is a website for vendors and bakery 
+owners. This website enables them to a direct 
+interaction. And it also helps to know the 
+original manufacturing cost and saving 
+the time of both the vendors and users. In 
+this website the factory owner and the bakery
+runners will be registered their details.
+<br>
+<br>
+The users(bakery runners) will know the vendors
+and their products. If they want those product, 
+can purchase it in online. And we will maintain 
+all the details of the products of the vendors.
+<br>
+<br>
+Through this website the vendors will know their
+customers. Here there is no agent or mediator 
+between the vendors and users.Also the user will 
+know the products of each factory and cost of the 
+product.
+<a href="www.kgisl.com" alt="thank u"><h5><p style font-style:algerian;>Powered By KGISL</p></h5></a>
+</div>
+</td>
+</tr>
+</table>
+<table width="30%" height="30%" align="right">
+<div class="logtable">
+<tr>
+<th><p style text-align:center><h4>VENDOR/USER LOGIN</h4></p></th>
+</tr>
+<tr>
+<td>USERID</td>
+<td><h1><input type="text" name="userid" value=""></h1></td><br/>
+</tr>
+<tr>
+<td>PASSWORD</td>
+<td><h1><input type="password" name="password" value=""></h1></td><br/>
+</tr>
+<br/>
+<br/>
+<div class="btn-group">
+<tr>
+<td><input type="button" class="button1" value="SUBMIT" onclick="lin();"></td>
+</td>
+<td><input type="button" class="button1" value="CANCEL" onclick="can();"></td>
+</tr>
+<br>
+<br>
+<tr><td><p style text-align:center><input type="button" class="button1" value="REGISTRATION"  onclick="reg();"></p></td>
+<td><p style text-align:center><input type="button" class="button1" name="admin" value="ADMIN" onclick="admin();"></p></td>
+</tr>
+<br>
+</div>
+</div>
+</table>
+</form>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+function reg()
+{
+window.location("register.php");
+}
+function admin()
+{
+window.location("adminlog.html");
+}
+</script>
+</body>
+</html>
